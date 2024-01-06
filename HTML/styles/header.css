@@ -1,0 +1,139 @@
+.header{
+  height:55px; 
+  display:flex;
+  flex-direction:row; 
+  justify-content:space-between;
+
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color:white;
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:rgb(226, 225, 225);
+}
+
+.left-section{
+    width:150px;
+    display:flex;
+    align-items:center;
+}
+
+.middle-section{
+    flex:1;
+    margin-left:70px;
+    margin-right:35x;
+    max-width:300px;
+    display:flex;
+    align-items:center;
+}
+
+.right-section{
+   display:flex;
+    width:200px;
+    align-items:center;
+    justify-content:space-between;
+    margin-right:20px;
+    flex-shrink:0;
+}
+
+.hamburger-menu{
+    height:20px;
+    margin-right:20px;
+    margin-left:24px;
+
+}
+.youtube-logo{
+    height:24px;
+}
+.voice-button{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border:none;
+    background-color:rgb(242, 241, 241);
+    margin-left:4px;
+}
+.search-button{
+    height:40px;
+    width:60px;
+    margin-left:-1px;
+    border-color:rgb(211, 210, 210);
+    border-style:solid;
+    border-left:none;
+    position:relative;
+}
+.search-bar{
+   flex:1;
+   height:34px;
+   width:34px;
+   border-color:rgb(211, 210, 210);
+   border-style:solid;
+}  
+.search-box-placeholder{
+    font-family:Roboto,Arial;
+    font-size:30px;
+}
+.search-icon{
+    height:25px;
+    
+}
+.search-button .tooltip{
+    position:absolute;
+    background-color:gray;
+    color:white;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:8px;
+    padding-right:6px;
+    border-radius:2px;
+    font-size:12px;
+    bottom:-15px;
+    right:2px;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events:none;
+}
+.search-button:hover .tooltip{
+ opacity:1;   
+}
+
+.upload{
+    height:30px;
+    margin-left:10px;
+    
+  
+}
+.youtubeapps{
+    height:30px;
+    
+    
+}
+.noti-container{
+    position:relative;
+}
+.noti{
+    height:30px;   
+}
+
+.noti-count{
+    position:absolute;
+    top:-2px;
+    right:-5px;
+    background-color:rgb(188, 12, 12);
+    color:white;
+    font-family:Roboto,Arial;
+    font-size:10px;
+    padding-left:6px;
+    padding-right:6px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-radius:10px;
+
+}
+.channel{
+    height:40px;
+    
+    
+}

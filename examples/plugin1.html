@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$.fn.greenify = function()
+{
+    this.css( "color", "green" );
+};
+$("button").click(function()
+{
+$("p").greenify(); 
+$("h2").greenify();
+});
+});
+</script>
+<style>
+p{font-size:2em;}
+</style>
+</head>
+<body>
+<h1>Hello World</h1>
+<p>Welcome to plugin section of Jquery</p>
+<h2><b>Plug in extented functionality</b></h2>
+<button>Click to Apply</button>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <style type="text/css">
+        #display{
+            width:200px;
+            height:200px;
+            border:1px solid black;
+        }
+    </style>
+    <body>
+        <h1>hello all!!</h1>
+        <button id="button">button 1</button><br>
+        
+        <input id="textbox" type="text">
+        <button id="submit">Submit</button>
+        <div id="display"></div><br>
+        <button onclick="document.location='https://www.google.com/search?q=next+line+command+on+html&rlz=1C1CHBD_enIN964IN964&oq=next+line+command+on+html&aqs=chrome..69i57j0i22i30l5j0i15i22i30j0i390l3.6064j0j7&sourceid=chrome&ie=UTF-8'"> click to open</button>
+
+
+        
+        
+        <script>
+            $(document).ready(function(){
+                
+                $('#button').click(function(){
+                $("h1").hide();
+                $(this).css("color","red");
+                });
+            })
+
+            $(document).ready(function(){
+                $("#submit").click(function(){
+                var txt=$("#textbox").val();
+                $("#display").html(txt); 
+                })
+            })
+
+        </script>
+       
+    </body>
+</html>

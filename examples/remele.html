@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    $("p").remove("#p1");
+    });
+  $("#b2").click(function(){
+    $("p").remove("#p2");
+    $("input").remove("#un");
+  });s
+});
+</script>
+<body>
+<p>Learning to remove elements using Jquery</p>
+<p id=p1><font color=blue>Learning to remove elements using Jquery</font></p>
+<p id=p2><font color=red>Learning to remove elements using Jquery</font></p>
+<input type=text id=un size=20><br>
+<input type=text id=city size=20><br>
+<br><br><button id=b1>Click to Remove element blue para</button>
+<button id=b2>Click to Remove element red para,textbox</button>
+</body>
+</html>
